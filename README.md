@@ -1,4 +1,4 @@
-<img width="2071" height="874" alt="diagramv3 drawio" src="https://github.com/user-attachments/assets/96d175df-2a8d-4556-90cf-3e7fd550dfd3" />
+<img width="2072" height="874" alt="umlv4 drawio" src="https://github.com/user-attachments/assets/fa9719aa-3559-488b-9e56-85cea2aa227b" />
 UML
 
 Zakres funkcjonalności aplikacji:
