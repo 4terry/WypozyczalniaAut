@@ -2,7 +2,11 @@
 UML
 
 Zakres funkcjonalności aplikacji:
-- Trwały zapis i odczyt stanu systemu z pliku .json.
-- Dodawanie, przeglądanie i modyfikowanie pojazdów oraz klientami.
-- Sprawdzenie listy aktualnie dostępnego sprzętu z filtorwaniem.
+- Obsługa wypożyczeń i zwrotów.
+- Trwały zapis i odczyt stanu z pliku .json.
+- Dodawanie, przeglądanie i modyfikowanie pojazdów oraz klientów.
+- Sprawdzenie listy aktualnie dostępnych aut z filtorwaniem.
 - Automatyczne wyliczanie kosztów na podstawie wybranej reguły.
+
+Zakres obowiązków:
+Zdecydowaliśmy się nie dzielić projektu na oddzielne role, tylko pracujemy wszyscy wspólnie na jednej sesji.
