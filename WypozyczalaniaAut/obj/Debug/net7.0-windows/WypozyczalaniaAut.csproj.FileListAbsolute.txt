@@ -1,0 +1,17 @@
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\bin\Debug\net7.0-windows\WypozyczalaniaAut.exe
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\bin\Debug\net7.0-windows\WypozyczalaniaAut.deps.json
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\bin\Debug\net7.0-windows\WypozyczalaniaAut.runtimeconfig.json
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\bin\Debug\net7.0-windows\WypozyczalaniaAut.dll
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\bin\Debug\net7.0-windows\WypozyczalaniaAut.pdb
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.csproj.AssemblyReference.cache
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.MainForm.resources
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.csproj.GenerateResource.cache
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.AssemblyInfoInputs.cache
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.AssemblyInfo.cs
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.csproj.CoreCompileInputs.cache
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.dll
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\refint\WypozyczalaniaAut.dll
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.pdb
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\WypozyczalaniaAut.genruntimeconfig.cache
+C:\Users\3manson\source\repos\WypozyczalaniaAut\WypozyczalaniaAut\obj\Debug\net7.0-windows\ref\WypozyczalaniaAut.dll
