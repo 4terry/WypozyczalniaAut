@@ -8,10 +8,10 @@ namespace WypozyczalaniaAut.Modele
 {
     public abstract class Pojazd
     {
-        public string VIN { get; private set; }
-        public string Model { get; private set; }
-        public StatusAuta Status { get; private set; }
-        public double StawkaBazowa { get; private set; }
+        public string VIN { get; protected set; }
+        public string Model { get; protected set; }
+        public StatusAuta Status { get; protected set; }
+        public double StawkaBazowa { get; protected set; }
 
         protected Pojazd(string vin, string model, double stawkaBazowa)
         {
@@ -30,7 +30,7 @@ namespace WypozyczalaniaAut.Modele
 
         public override string ToString()
         {
-            return $"{Model} (VIN: {VIN}) - {Status}";
+            return $"{Model} [VIN: {VIN}] - {Status} | Stawka bazowa: {StawkaBazowa} PLN";
         }
     }
 }

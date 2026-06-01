@@ -26,14 +26,23 @@ namespace WypozyczalaniaAut.Logika
 
         public List<Pojazd> SprawdzDostepnosc()
         {
-            return _auta.Where(a => a.Status == StatusAuta.Dostepny).ToList();
+            List<Pojazd> dostepneAuta = new List<Pojazd>();
+
+            foreach (Pojazd auto in _auta)
+            {
+                if (auto.Status == StatusAuta.Dostepny)
+                {
+                    dostepneAuta.Add(auto);
+                }
+            }
+            return dostepneAuta;
         }
 
         public Wypozyczenie ZarejestrujWypozyczenie(Klient k, Pojazd p, IRegulaOplat regula)
         {
             if (p.Status != StatusAuta.Dostepny)
             {
-                throw new Exception("Błąd: Ten pojazd nie jest obecnie dostępny!");
+                throw new Exception("Ten pojazd nie jest obecnie dostępny");
             }
 
             int noweId = _historiaWypozyczen.Count + 1;
@@ -45,20 +54,26 @@ namespace WypozyczalaniaAut.Logika
             return noweWypozyczenie;
         }
 
-        public double ZarejestrujZwrot(int idWypozyczenia)
+        public double ZarejestrujZwrot(int idWypozyczenia, DateTime dataOddania)
         {
-            var wypozyczenie = _historiaWypozyczen.FirstOrDefault(w => w.IdWypozyczenia == idWypozyczenia);
-
+            Wypozyczenie wypozyczenie = null;
+            foreach (var w in _historiaWypozyczen)
+            {
+                if (w.IdWypozyczenia == idWypozyczenia)
+                {
+                    wypozyczenie = w;
+                    break;
+                }
+            }
             if (wypozyczenie == null)
-                throw new Exception("Błąd: Nie znaleziono takiego wypożyczenia.");
-
+            {
+                throw new Exception("Nie znaleziono takiego wypożyczenia.");
+            }
             if (wypozyczenie.DataZwrotu.HasValue)
-                throw new Exception("Błąd: To auto zostało już zwrócone.");
-
-            wypozyczenie.ZakonczWypozyczenie(DateTime.Now);
-
-            wypozyczenie.WypozyczoneAuto.ZmienStatus(StatusAuta.Dostepny);
-
+            {
+                throw new Exception("To auto zostało już zwrócone.");
+            }
+            wypozyczenie.ZakonczWypozyczenie(dataOddania);
             return wypozyczenie.ObliczCalkowityKoszt();
         }
 

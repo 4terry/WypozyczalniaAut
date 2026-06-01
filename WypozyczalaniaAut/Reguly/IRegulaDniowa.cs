@@ -11,9 +11,10 @@ namespace WypozyczalaniaAut.Reguly
         public double ObliczKoszt(DateTime dataWypoz, DateTime dataZwrotu, double stawka)
         {
             double dni = Math.Ceiling((dataZwrotu - dataWypoz).TotalDays);
-
-            if (dni == 0) dni = 1;
-
+            if (dni == 0)
+            {
+                dni = 1;
+            }
             return dni * stawka;
         }
     }

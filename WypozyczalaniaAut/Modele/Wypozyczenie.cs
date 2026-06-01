@@ -26,26 +26,44 @@ namespace WypozyczalaniaAut.Modele
             DataZwrotu = null;
         }
 
-        public void ZakonczWypozyczenie(DateTime dataZwrotu)
+        public void ZakonczWypozyczenie(DateTime dataOddania)
         {
-            DataZwrotu = dataZwrotu;
+            if (DataZwrotu.HasValue)
+            {
+                throw new Exception("To auto zostało już zwrócone");
+            }
+            if (dataOddania < DataWypozyczenia)
+            {
+                throw new Exception("Data zwrotu nie może być wcześniejsza niż data wypożyczenia");
+            }
+
+            DataZwrotu = dataOddania;
+            WypozyczoneAuto.ZmienStatus(StatusAuta.Dostepny);
         }
 
         public double ObliczCalkowityKoszt()
         {
-            if (!DataZwrotu.HasValue) return 0;
-
+            if (!DataZwrotu.HasValue)
+            {
+                return 0;
+            }
             double kosztPodstawowy = RegulaOplat.ObliczKoszt(DataWypozyczenia, DataZwrotu.Value, WypozyczoneAuto.StawkaBazowa);
-
             double kosztyDodatkowe = WypozyczoneAuto.ObliczKosztyDodatkowe();
-
             return kosztPodstawowy + kosztyDodatkowe;
         }
 
         public override string ToString()
         {
-            string status = DataZwrotu.HasValue ? $"Zwrócono ({DataZwrotu.Value.ToShortDateString()})" : "Wypożyczone - w trasie";
-            return $"Wynajem #{IdWypozyczenia}: {Klient.ImieNazwisko} wynajął {WypozyczoneAuto.Model} [{status}]";
+            string status;
+            if (DataZwrotu.HasValue)
+            {
+                status = $"Zwrócono ({DataZwrotu.Value.ToShortDateString()})";
+            }
+            else
+            {
+                status = "Wypożyczone";
+            }
+            return $"Wynajem nr.{IdWypozyczenia}: {Klient.ImieNazwisko} wynajął {WypozyczoneAuto.Model} [{status}]";
         }
     }
 }
