@@ -20,7 +20,7 @@ namespace WypozyczalaniaAut.Modele
         {
             if (procent < 0 || procent > 100)
             {
-                throw new ArgumentException("Błąd: Nieprawidłowy stan paliwa!");
+                throw new ArgumentException("Nieprawidlowy stan paliwa");
             }
             PoziomBaterii = procent;
         }

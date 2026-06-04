@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "Klient": "Wies\u0142aw Paleta",
+    "Auto": "Honda Civic",
+    "DataWypozyczenia": "2026-06-04T20:04:43.3855784+02:00",
+    "DataZwrotu": null,
+    "Status": "W trakcie",
+    "CalkowityKoszt": 0
+  },
+  {
+    "Id": 2,
+    "Klient": "Wies\u0142aw Paleta",
+    "Auto": "Skoda Octavia",
+    "DataWypozyczenia": "2026-06-04T20:04:49.2771673+02:00",
+    "DataZwrotu": null,
+    "Status": "W trakcie",
+    "CalkowityKoszt": 0
+  },
+  {
+    "Id": 3,
+    "Klient": "Wies\u0142aw Paleta",
+    "Auto": "Tesla Model Y",
+    "DataWypozyczenia": "2026-06-04T20:04:52.8087529+02:00",
+    "DataZwrotu": null,
+    "Status": "W trakcie",
+    "CalkowityKoszt": 0
+  }
+]

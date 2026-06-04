@@ -9,5 +9,7 @@
         private Button buttonWypozycz;
         private Button buttonZwroc;
         private DateTimePicker datePickerZwrotu;
+        private Button buttonHistoria;
+        private TextBox textBoxSzukaj;
     }
 }

@@ -1,0 +1,4 @@
+Spalinowe;EJ9DJKGWNG;Honda Civic;250
+Spalinowe;G23LKLGNWG;Seat Leon;120
+Spalinowe;CZK4MEJGNJ;Skoda Octavia;135
+Elektryczne;US39MEKGF;Tesla Model Y;300
