@@ -21,7 +21,7 @@ namespace WypozyczalaniaAut.Modele
         {
             if (aktualnyStan < 0 || aktualnyStan > PojemnoscBaku)
             {
-                throw new ArgumentException("Nieprawidłowy stan paliwa!");
+                throw new ArgumentException("nieprawidłowy stan paliwa");
             }
             Paliwo = aktualnyStan;
         }

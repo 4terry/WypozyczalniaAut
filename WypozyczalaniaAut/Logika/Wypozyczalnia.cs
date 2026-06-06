@@ -42,7 +42,7 @@ namespace WypozyczalaniaAut.Logika
         {
             if (p.Status != StatusAuta.Dostepny)
             {
-                throw new Exception("Ten pojazd nie jest obecnie dostępny");
+                throw new Exception("ten pojazd nie jest obecnie dostępny");
             }
 
             int noweId = _historiaWypozyczen.Count + 1;
@@ -67,11 +67,11 @@ namespace WypozyczalaniaAut.Logika
             }
             if (wypozyczenie == null)
             {
-                throw new Exception("Nie znaleziono takiego wypożyczenia.");
+                throw new Exception("nie znaleziono takiego wypożyczenia.");
             }
             if (wypozyczenie.DataZwrotu.HasValue)
             {
-                throw new Exception("To auto zostało już zwrócone.");
+                throw new Exception("to auto zostało już zwrócone.");
             }
             wypozyczenie.ZakonczWypozyczenie(dataOddania);
             return wypozyczenie.ObliczCalkowityKoszt();

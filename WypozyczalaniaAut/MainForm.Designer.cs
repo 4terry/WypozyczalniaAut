@@ -11,5 +11,11 @@
         private DateTimePicker datePickerZwrotu;
         private Button buttonHistoria;
         private TextBox textBoxSzukaj;
+        private TextBox textBoxNowyKlient;
+        private Button buttonDodajKlienta;
+        private Label label1;
+        private ComboBox comboBoxRegulaOplat;
+        private TextBox textBoxStanPoZwrocie;
+        private Label label2;
     }
 }

@@ -1,3 +1,4 @@
 1;Wiesław Paleta
 2;Jan Maczeta
 3;Włodzimierz Biały
+4;Jan Paleta
