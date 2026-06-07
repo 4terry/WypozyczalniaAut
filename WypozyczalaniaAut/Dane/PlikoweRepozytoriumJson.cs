@@ -61,7 +61,6 @@ namespace WypozyczalaniaAut.Dane
                 }
             }
 
-            // Wczytywanie aut z pliku tekstowego
             if (File.Exists("auta.txt"))
             {
                 string[] linieAuta = File.ReadAllLines("auta.txt");
