@@ -56,8 +56,8 @@ namespace WypozyczalaniaAut
             buttonDodajKlienta = new Button();
             label1 = new Label();
             comboBoxRegulaOplat = new ComboBox();
-            this.textBoxStanPoZwrocie = new TextBox();
-            this.label2 = new Label();
+            textBoxStanPoZwrocie = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // buttonPokazAuta
@@ -124,9 +124,11 @@ namespace WypozyczalaniaAut
             // 
             // datePickerZwrotu
             // 
+            datePickerZwrotu.CustomFormat = "dd.MM.yyyy HH:mm";
+            datePickerZwrotu.Format = DateTimePickerFormat.Custom;
             datePickerZwrotu.Location = new Point(630, 472);
             datePickerZwrotu.Name = "datePickerZwrotu";
-            datePickerZwrotu.Size = new Size(205, 23);
+            datePickerZwrotu.Size = new Size(171, 23);
             datePickerZwrotu.TabIndex = 6;
             // 
             // buttonHistoria
@@ -184,25 +186,25 @@ namespace WypozyczalaniaAut
             // 
             // textBoxStanPoZwrocie
             // 
-            this.textBoxStanPoZwrocie.Location = new Point(841, 472);
-            this.textBoxStanPoZwrocie.Name = "textBoxStanPoZwrocie";
-            this.textBoxStanPoZwrocie.Size = new Size(71, 23);
-            this.textBoxStanPoZwrocie.TabIndex = 13;
+            textBoxStanPoZwrocie.Location = new Point(807, 472);
+            textBoxStanPoZwrocie.Name = "textBoxStanPoZwrocie";
+            textBoxStanPoZwrocie.Size = new Size(105, 23);
+            textBoxStanPoZwrocie.TabIndex = 13;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new Point(823, 454);
-            this.label2.Name = "label2";
-            this.label2.Size = new Size(105, 15);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Stan paliwa/baterii";
+            label2.AutoSize = true;
+            label2.Location = new Point(807, 454);
+            label2.Name = "label2";
+            label2.Size = new Size(105, 15);
+            label2.TabIndex = 14;
+            label2.Text = "Stan paliwa/baterii";
             // 
             // MainForm
             // 
             ClientSize = new Size(1487, 709);
-            Controls.Add(this.label2);
-            Controls.Add(this.textBoxStanPoZwrocie);
+            Controls.Add(label2);
+            Controls.Add(textBoxStanPoZwrocie);
             Controls.Add(comboBoxRegulaOplat);
             Controls.Add(label1);
             Controls.Add(buttonDodajKlienta);
@@ -280,7 +282,7 @@ namespace WypozyczalaniaAut
 
                     OdswiezWidok();
                     textBoxStanPoZwrocie.Clear();
-                    MessageBox.Show($"auto zwrócone pomyœlnie\ndo zap³aty: {doZaplaty} PLN");
+                    MessageBox.Show($"auto zwrócone pomyœlnie\ndo zap³aty: {doZaplaty:F2} PLN");
                 }
                 catch (Exception ex)
                 {
